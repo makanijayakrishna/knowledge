@@ -1,0 +1,13 @@
+Intially palo alto is with 192.168.1.1, with username: admin and password admin, As we know for all devices we need to make the local machine and 
+Palo alto in same network by changing the system IP and ping the device from PC.
+Login palo alto device using putty tool with SSH with port no 22.
+For disabling ZTP mode and to enable standard mode we need to login and change the password min8 char as per the requirement.
+Login in GUI mode with new password and with router IP ex:https://198.168.1.1/ MODEL=PA450.
+Go to device option and change the device management IP to your network IP range, and give commit then it takes some time to save and the restart the device.
+Connection process: internet to home router (192.168.1.1)----- firewall management port(192.168.1.100).
+Basics services need to enable in firewall go to device--- Services / primary DNS, secondary DNS, --- NTP---- NTP server address as ouur infracstructure.
+After connecting to internet we need to validate the license, we have 3 options and we need to click on retrive option for new devices.
+Need to do the basic configuration in firewall--- Network---zones in that we have the zones which are created previously, We need to change that zones to L3
+Go to interface and enable the layer 3 and default, Advanced select the required options for 2 ports.
+Go to virtual router and select the 2 interfaces which are created, select the static route and give the default for name and 0.0.0.0 (ip) and gateway IP address.
+Go to Policies, NAT - click on ADD already default policy is available, Create new security policy 
