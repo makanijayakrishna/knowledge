@@ -11,3 +11,4 @@ Need to do the basic configuration in firewall--- Network---zones in that we hav
 Go to interface and enable the layer 3 and default, Advanced select the required options for 2 ports.
 Go to virtual router and select the 2 interfaces which are created, select the static route and give the default for name and 0.0.0.0 (ip) and gateway IP address.
 Go to Policies, NAT - click on ADD already default policy is available, Create new security policy 
+Palo alto
